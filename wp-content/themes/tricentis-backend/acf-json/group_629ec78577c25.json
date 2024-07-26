@@ -1,0 +1,190 @@
+{
+    "key": "group_629ec78577c25",
+    "title": "Page Header Product Demo",
+    "fields": [
+        {
+            "key": "field_629ec78586b1f",
+            "label": "Hero",
+            "name": "",
+            "type": "accordion",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 0,
+            "open": 0,
+            "multi_expand": 1,
+            "endpoint": 0
+        },
+        {
+            "key": "field_629ec78586b33",
+            "label": "Hero",
+            "name": "hero",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 0,
+            "show_in_graphql": 1,
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_629ec7859eda3",
+                    "label": "Default Hero",
+                    "name": "default_hero",
+                    "type": "clone",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 0,
+                    "clone": [
+                        "field_5f7c8bad32372",
+                        "field_6272ac567ff56",
+                        "field_5f627fed43a2f",
+                        "field_5f0726422652e",
+                        "field_5f0726512652f",
+                        "group_62618ad536190",
+                        "field_5f7c8c1c32376",
+                        "field_62853adc9cf04"
+                    ],
+                    "display": "seamless",
+                    "layout": "block",
+                    "prefix_label": 0,
+                    "prefix_name": 1,
+                    "default_value": ""
+                }
+            ]
+        },
+        {
+            "key": "field_629ec78586b42",
+            "label": "Alert",
+            "name": "",
+            "type": "accordion",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 0,
+            "open": 0,
+            "multi_expand": 1,
+            "endpoint": 0
+        },
+        {
+            "key": "field_629ec78586b4b",
+            "label": "Settings",
+            "name": "alert_settings",
+            "type": "button_group",
+            "instructions": "Select On to have a page specific alert.  Select Global to use the global alert settings in your Theme Settings.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 0,
+            "show_in_graphql": 1,
+            "choices": {
+                "off": "Off",
+                "global": "Global",
+                "on": "On"
+            },
+            "allow_null": 0,
+            "default_value": "global",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_629ec78586b53",
+            "label": "AlertGroup",
+            "name": "alertgroup",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_629ec78586b4b",
+                        "operator": "==",
+                        "value": "on"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 0,
+            "show_in_graphql": 1,
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_629ec785d4777",
+                    "label": "Alert Content",
+                    "name": "alert_content",
+                    "type": "clone",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 0,
+                    "clone": [
+                        "group_627dc51497de8"
+                    ],
+                    "display": "seamless",
+                    "layout": "block",
+                    "prefix_label": 0,
+                    "prefix_name": 1
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "templates\/product-demo-form.php"
+            }
+        ]
+    ],
+    "menu_order": 1,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content"
+    ],
+    "active": true,
+    "description": "This should contain all masthead options for at least pages.  Other post types may or may not use this.",
+    "show_in_rest": 0,
+    "show_in_graphql": 1,
+    "graphql_field_name": "pageHeaderProductDemo",
+    "map_graphql_types_from_location_rules": 0,
+    "graphql_types": "",
+    "modified": 1660986383
+}

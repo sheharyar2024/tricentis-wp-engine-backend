@@ -1,0 +1,165 @@
+$component__typography__color: $black !default;
+$component__typography__font: $font !default;
+$component__typography__heading_font: $font--heading !default;
+$component__typography__code__font: $font !default;
+$component__typography__pre__font: $font !default;
+
+body{
+	color: $component__typography__color;
+	font-family: $component__typography__font;
+}
+
+.prehead{
+
+}
+
+.title{
+	font-family: $component__typography__heading_font;
+}
+
+//all free text fields should be wrapped in .wysiwyg
+.wysiwyg{
+	h1, h2, h3, h4, h5, h6{
+		font-family: $component__typography__heading_font;
+		margin: rem-calc( 0 0 16 );
+		display: inline-block;
+	}
+
+	p{
+		font-weight: map-get( $font-weights, 'regular' );
+		font-size: rem-calc( 16 );
+		line-height: rem-calc( 20 );
+
+		margin: rem-calc( 0 0 16 );
+	}
+
+	ul, ol {
+		line-height: 1;
+		margin: rem-calc( 0 0 16 0);
+
+		li{
+			position: relative;
+			margin: rem-calc( 0 0 10 16 );
+
+			&:last-of-type{
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	ul{
+		list-style: disc;
+	}
+
+	ol {
+		list-style: decimal;
+	}
+
+	li > ul,
+	li > ol {
+		margin-left: rem-calc( 16 );
+	}
+
+	pre {
+		margin: rem-calc( 0 0 16 );
+		padding: rem-calc( 16 );
+		max-width: 100%;
+		
+		font-family: $component__typography__pre__font;
+		font-size: rem-calc( 16 );
+		line-height: rem-calc( 20 );
+
+		overflow: scroll;
+	}
+	
+	code, kbd, tt, var {
+		font-family: $component__typography__pre__font;
+		font-size: rem-calc( 16 );
+	}
+	
+	dt {
+		font-weight: map-get( $font-weights, 'bold' );
+	}
+
+	dd {
+		margin: rem-calc( 0 16 16 16 );
+	}
+
+	//WP specific classes
+
+	.alignleft {
+		display: inline;
+		float: left;
+		margin-right: rem-calc( 16 );
+		margin-bottom: rem-calc( 16 );
+	}
+	
+	.alignright {
+		display: inline;
+		float: right;
+		margin-left: rem-calc( 16 );
+		margin-bottom: rem-calc( 16 );
+	}
+	
+	.aligncenter {
+		clear: both;
+		@include center-block;
+		margin-bottom: rem-calc( 16 );
+	}
+	
+	.wp-smiley {
+		border: none;
+		margin-bottom: 0;
+		margin-top: 0;
+		padding: 0;
+	}
+	
+	.wp-caption {
+		margin-bottom: rem-calc( 16 );
+		max-width: 100%;
+		
+		[class*="wp-image-"] {
+			@include center-block;
+		}
+		
+		.wp-caption-text {
+			margin: rem-calc( 16 0 );
+			text-align: center;
+		}
+	}
+	
+	.gallery {
+		margin-bottom: rem-calc( 16 );
+	}
+	
+	.gallery-item {
+		display: inline-block;
+		text-align: center;
+		vertical-align: top;
+		width: 100%;
+		
+		// Loops to enumerate the classes for gallery columns.
+		@for $i from 2 through 9 {
+			.gallery-columns-#{$i} & {
+				max-width: percentage( 100 / $i );
+			}
+		}
+	}
+	
+	.gallery-caption {
+		display: block;
+	}
+
+	blockquote{
+		margin: rem-calc( 0 16 16 );
+		padding: rem-calc( 16 );
+		border-left: 2px solid $primary;
+		p{
+			margin: 0;
+		}
+	}
+
+	.responsive-embed{
+		margin: rem-calc( 0 0 16 );
+	}
+}

@@ -1,0 +1,93 @@
+{
+    "key": "group_5eed3680972b5",
+    "title": "Support: Developer",
+    "fields": [
+        {
+            "key": "field_5eed36d61adc1",
+            "label": "Developer",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 0,
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5eed368b1adbf",
+            "label": "Additional Classes",
+            "name": "additional_classes",
+            "type": "text",
+            "instructions": "Manually add css classes to this module.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 0,
+            "show_in_graphql": 1,
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5eed36b21adc0",
+            "label": "Anchor",
+            "name": "anchor",
+            "type": "text",
+            "instructions": "Manually add an anchor tag to this module.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 0,
+            "show_in_graphql": 1,
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            },
+            {
+                "param": "post_type",
+                "operator": "!=",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "Developer tab and special settings that most users would not need to touch.",
+    "show_in_rest": 0,
+    "show_in_graphql": 0,
+    "graphql_field_name": "support:Developer",
+    "map_graphql_types_from_location_rules": 0,
+    "graphql_types": "",
+    "modified": 1660984644
+}

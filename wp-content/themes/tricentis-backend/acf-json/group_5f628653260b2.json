@@ -1,0 +1,137 @@
+{
+    "key": "group_5f628653260b2",
+    "title": "Page Footer",
+    "fields": [
+        {
+            "key": "field_6269989cb1e81",
+            "label": "Call to Action Settings",
+            "name": "call_to_action_settings",
+            "aria-label": "",
+            "type": "button_group",
+            "instructions": "Controls Call To Action section CTA. Choose Global to use the CTA defined in Theme Settings. Choose On to create a custom CTA for this page.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "off": "Off",
+                "global": "Global",
+                "on": "On"
+            },
+            "default_value": "global",
+            "return_format": "value",
+            "allow_null": 0,
+            "layout": "horizontal"
+        },
+        {
+            "key": "field_626a046a595b0",
+            "label": "Call to Action Group",
+            "name": "call_to_action_group",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6269989cb1e81",
+                        "operator": "==",
+                        "value": "on"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 0,
+            "show_in_graphql": 1,
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_626997bbe1061",
+                    "label": "Call to Action",
+                    "name": "call_to_action",
+                    "aria-label": "",
+                    "type": "clone",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 0,
+                    "clone": [
+                        "group_62616affacb89"
+                    ],
+                    "display": "seamless",
+                    "layout": "block",
+                    "prefix_label": 0,
+                    "prefix_name": 0
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "partner"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "landing_pages"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "learn"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "case_study"
+            }
+        ]
+    ],
+    "menu_order": 100,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content"
+    ],
+    "active": true,
+    "description": "This typically contains information that would appear above the page footer.  Usually this is a call to action (global with local override).",
+    "show_in_rest": 0,
+    "modified": 1720646386
+}

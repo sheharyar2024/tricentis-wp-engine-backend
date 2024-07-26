@@ -1,0 +1,101 @@
+{
+    "key": "group_625c86f90b413",
+    "title": "Support: Background Pattern TR",
+    "fields": [
+        {
+            "key": "field_625c86f90eb22",
+            "label": "Pattern",
+            "name": "pattern",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 0,
+            "show_in_graphql": 1,
+            "choices": {
+                "blaze_pattern": "Blaze pattern",
+                "tricentis_blue_pattern": "Tricentis Blue Pattern",
+                "warp_pattern": "Warp Pattern",
+                "gradient_angel": "Rainbow Pattern"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "default_value": "none",
+            "layout": "horizontal",
+            "return_format": "value",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_6328b54a13328",
+            "label": "Rainbow Pattern Orientation",
+            "name": "rainbow_pattern_orientation",
+            "type": "button_group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_625c86f90eb22",
+                        "operator": "==",
+                        "value": "gradient_angel"
+                    },
+                    {
+                        "field": "field_625c86f90eb22",
+                        "operator": "!=",
+                        "value": "gradient_angel"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 0,
+            "show_in_graphql": 1,
+            "choices": {
+                "top_left": "Top Left",
+                "top_right": "Top Right",
+                "bottom_left": "Bottom Left",
+                "bottom_right": "Bottom Right"
+            },
+            "allow_null": 0,
+            "default_value": "",
+            "layout": "horizontal",
+            "return_format": "value"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            },
+            {
+                "param": "post_type",
+                "operator": "!=",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "show_in_graphql": 0,
+    "graphql_field_name": "support:BackgroundColor(Copy)",
+    "map_graphql_types_from_location_rules": 0,
+    "graphql_types": "",
+    "modified": 1664919441
+}

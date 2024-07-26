@@ -1,0 +1,60 @@
+{
+    "key": "group_5e46ad1036013",
+    "title": "Support: Icon",
+    "fields": [
+        {
+            "key": "field_5e46ad1492200",
+            "label": "Icon",
+            "name": "icon",
+            "type": "image",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 0,
+            "show_in_graphql": 1,
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            },
+            {
+                "param": "post_type",
+                "operator": "!=",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "This is used as a pivot point for icons. This may be an image or a font character selector such as Font Awesome.",
+    "show_in_rest": 0,
+    "show_in_graphql": 0,
+    "graphql_field_name": "support:Icon",
+    "map_graphql_types_from_location_rules": 0,
+    "graphql_types": "",
+    "modified": 1660985044
+}

@@ -1,0 +1,125 @@
+.module--vertical_tabber{
+	opacity: 0;
+
+	.prehead{
+
+	}
+
+	.title{
+
+	}
+
+	.wysiwyg{
+
+	}
+
+	.prehead + .title{
+	}
+	
+	.title + .wysiwyg{
+	}
+
+	.vertical-tabs{
+
+		.mobile-button-container{
+			overflow-x: scroll;
+			-ms-overflow-style: none;
+		}
+
+		.tab-buttons{
+			position: relative;
+
+			display: flex;
+			justify-content: space-between;
+			align-items: flex-end;
+
+			@include respond-above( 'md' ){
+				flex-wrap: wrap;
+				justify-content: flex-start;
+			}
+		}
+
+		.vertical-tab-button{
+			color: $black;
+			opacity: 0.3;
+			appearance: none;
+			background: none;
+			border: none;
+			justify-content: flex-start;
+			text-align: left;
+
+			padding: 0;
+			margin: 0;
+			margin-right: rem-calc( 30 );
+			flex: 0 0 auto;
+
+			@include respond-above( 'md' ){
+				width: 100%;
+				margin-right: rem-calc( 0 );
+				margin-bottom: rem-calc( 30 );
+			}
+
+			&:last-of-type{
+				margin-right: rem-calc( 0 );
+				margin-bottom: rem-calc( 0 );
+			}
+
+			&:hover,
+			&:focus{
+				opacity: .7;
+			}
+
+			&[aria-selected="true"] {
+				opacity: 1;
+			}
+		}
+
+		.panel-container{
+		}
+
+		&.js-active{
+			.panel-container{
+				position: relative;
+				width: 100%;
+
+				.vertical-tab-panel{
+					//these values are important
+					width: 100%;
+					position: absolute;
+					top: 0;
+					left: 0;
+					outline: none;
+
+					//these values can be changed for client specific transitions
+					transition: $global-transition;
+					transform: translateX( 100px );
+					opacity: 0;
+
+					&.active{
+						//important
+						position: relative;
+
+						//available for client specific transitions
+						transform: translateX( 0 );
+						opacity: 1;
+					}
+					&.transition--out{
+						//important
+						position: relative;
+
+						//available for client specific transitions
+						transform: translateX( 100px );
+					}
+					&.transition--in{
+					}
+				}
+			}
+		}
+	}
+}
+
+.no-js{
+	.module--vertical_tabber{
+		@include fallbackAnimation(fadeInAnimation);;
+	}
+}

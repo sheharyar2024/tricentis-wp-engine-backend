@@ -1,0 +1,50 @@
+{
+    "key": "group_60346f0cceac0",
+    "title": "Settings: Lighthouse",
+    "fields": [
+        {
+            "key": "field_60346f28a6481",
+            "label": "Preconnect",
+            "name": "developer_preconnect",
+            "type": "textarea",
+            "instructions": "Make sure to put each domain on a separate line. Each domain will be added to the HEAD with a preconnect\/dns-prefetch link tag.  For more information: <a href=\"https:\/\/web.dev\/uses-rel-preconnect\/\">Web.dev<\/a>",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 0,
+            "show_in_graphql": 1,
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "developer-settings"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "show_in_graphql": 0,
+    "graphql_field_name": "settings:Lighthouse",
+    "map_graphql_types_from_location_rules": 0,
+    "graphql_types": "",
+    "modified": 1664475937
+}

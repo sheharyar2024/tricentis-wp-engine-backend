@@ -1,0 +1,74 @@
+{
+    "key": "group_625997c46d159",
+    "title": "Content Blocks: Locations",
+    "fields": [
+        {
+            "key": "field_625997c470497",
+            "label": "Locations",
+            "name": "locations",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 0,
+            "clone": [
+                "group_6259942ca69f3"
+            ],
+            "display": "seamless",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "templates\/locations.php"
+            }
+        ]
+    ],
+    "menu_order": 30,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content"
+    ],
+    "active": true,
+    "description": "This is an example of setting up a fixed template based off our modules.  Please see the Template Groups for additional setup needed.",
+    "show_in_rest": 1,
+    "show_in_graphql": 1,
+    "graphql_field_name": "contentBlocksLocations",
+    "map_graphql_types_from_location_rules": 1,
+    "graphql_types": [
+        "ContentNode",
+        "Logo",
+        "MediaItem",
+        "Page",
+        "Post",
+        "Testimonial",
+        "TermNode",
+        "Category",
+        "PostFormat",
+        "Tag",
+        "ContentTemplate",
+        "DefaultTemplate",
+        "Template_FixedModulesExample",
+        "Comment",
+        "Menu",
+        "MenuItem",
+        "User",
+        "ThemeGeneralSettings",
+        "Options404Settings",
+        "DeveloperSettings"
+    ],
+    "modified": 1660987470
+}

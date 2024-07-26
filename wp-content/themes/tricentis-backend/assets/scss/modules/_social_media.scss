@@ -1,0 +1,9 @@
+.module--social_media{
+	opacity: 0;
+}
+
+.no-js{
+	.module--social_media{
+		@include fallbackAnimation(fadeInAnimation);;
+	}
+}

@@ -1,0 +1,74 @@
+{
+    "key": "group_628d29a1b91b9",
+    "title": "Support: Resource Type Control",
+    "fields": [
+        {
+            "key": "field_628d29b1c9132",
+            "label": "Enable Editing for Resource Types?",
+            "name": "enable_editing_for_resource_types",
+            "type": "true_false",
+            "instructions": "By default, editing is disabled for the Resource Type taxonomy. If you need to add or remove any resource types, set the toggle to \"enabled.\"",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 0,
+            "show_in_graphql": 1,
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "Enabled",
+            "ui_off_text": "Disabled"
+        },
+        {
+            "key": "field_628e32f23b2c2",
+            "label": "Which Resource Types to Show in Sidebar Menu in Admin?",
+            "name": "which_resource_types_to_show_in_sidebar_menu_in_admin",
+            "type": "taxonomy",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "75",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 0,
+            "show_in_graphql": 1,
+            "taxonomy": "resource_type",
+            "field_type": "multi_select",
+            "allow_null": 0,
+            "add_term": 1,
+            "save_terms": 0,
+            "load_terms": 0,
+            "return_format": "id",
+            "multiple": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "resources-settings"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "show_in_graphql": 0,
+    "graphql_field_name": "support:ResourceTypeControl",
+    "map_graphql_types_from_location_rules": 0,
+    "graphql_types": "",
+    "modified": 1664475937
+}

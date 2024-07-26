@@ -1,0 +1,65 @@
+.module--logos{
+	opacity: 0;
+
+	.title{
+
+	}
+
+	.wysiwyg{
+
+	}
+
+	.logos{
+		&--grid{
+			.logo{
+				padding: 0 ($grid-gutter-width/2);
+				width: 20%;
+			}
+		}
+	}
+
+	.logos-slide{
+		.logo{
+			padding: 0 ($grid-gutter-width/2);
+		}
+		@for $i from 1 through 6 {
+			&--#{$i}{
+				.logo{
+					width: ( 1 / $i )*100%;
+				}
+			}
+		}
+	}
+
+	.slick-track {
+	}
+
+	.slick-slide {
+	}
+
+	.slick-active {
+	}
+
+	.slick-arrow{
+		z-index: 20;
+		&:before{
+			color: $black;
+			font-size: rem-calc( 30 );
+		}
+	}
+	.slick-prev{
+		left: 0;
+		transform: translateX( -100% );
+	}
+	.slick-next{
+		right: 0;
+		transform: translateX( 100% );
+	}
+
+}
+
+.no-js{
+	.module--logos{
+		@include fallbackAnimation(fadeInAnimation);;
+	}
+}

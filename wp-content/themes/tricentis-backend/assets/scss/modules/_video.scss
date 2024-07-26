@@ -1,0 +1,61 @@
+.module--video{
+	opacity: 0;
+
+	&__container{
+		position: relative;
+	}
+
+	&__image{
+		@include absolute-full;
+		z-index: 0;
+		img{
+			@include imageObjectFit(cover);
+		}
+
+		&:after{
+			@include absolute-full;
+			content: '';
+			z-index: 1;
+			background: rgba( $black, 0.3 );
+		}
+	}
+
+	&__content{
+		position: relative;
+		z-index: 2;
+	}
+
+	.title{
+		color: $white;
+	}
+
+	.wysiwyg{
+		*{
+			color: $white;
+		}
+	}
+
+	.title + .wysiwyg{
+		
+	}
+
+	&__play{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		&__button{
+			&:after{
+				@include absolute-full;
+				content: '';
+				z-index: 5;
+			}
+		}
+	}
+}
+
+.no-js{
+	.module--video{
+		@include fallbackAnimation(fadeInAnimation);;
+	}
+}

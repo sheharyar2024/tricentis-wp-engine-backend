@@ -1,0 +1,57 @@
+$utilities__backgrounds__colors: $background-colors;
+
+$utilities__backgrounds__text__colors: $background-font-colors;
+
+.background{
+	z-index: -10;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;	
+
+	&--image{
+		z-index: -5;
+		picture, img{
+			height: 100%;
+			width: 100%;
+			top: 0;
+			left: 0;
+			object-fit: cover;
+		}
+	}
+
+	&--video{
+		z-index: -4;
+		height: 100%;
+		width: 100%;
+		top: 0;
+		left: 0;
+		object-fit: cover;
+	}
+
+	&--opacity{
+		z-index: -1;
+		height: 100%;
+		width: 100%;
+		top: 0;
+		left: 0;
+		background: $black;
+	}
+}
+@each $name, $color in $utilities__backgrounds__colors{
+	.background--#{$name}{
+		background: $color;
+		&.background--full{
+		}
+		&.background--top {
+			background: linear-gradient( to bottom, $color 0, $color 50%, transparent 50%, transparent 100% );
+		}
+		&.background--bottom {
+			background: linear-gradient( to bottom, transparent 0, transparent 50%, $color 50%, $color 100% );
+		}
+		&.background--centered {
+			background: linear-gradient( to bottom, transparent 0, transparent 25%, $color 25%, $color 75%, transparent 75%, transparent 100% );
+		}
+	}
+}

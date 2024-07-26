@@ -1,0 +1,11 @@
+svg{
+	fill: currentColor;
+	stroke: currentColor;
+
+	@each $name, $color in $icon-colors{
+		&--#{$name}{
+			fill: $color;
+			stroke: $color;
+		}
+	}
+}

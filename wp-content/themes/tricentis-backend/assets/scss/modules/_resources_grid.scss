@@ -1,0 +1,13 @@
+.module--resources_grid{
+	opacity: 0;
+
+	.title{
+	}
+
+}
+
+.no-js{
+	.module--resources_grid{
+		@include fallbackAnimation(fadeInAnimation);;
+	}
+}

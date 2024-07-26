@@ -1,0 +1,40 @@
+.module--testimonial_slider{
+	opacity: 0;
+
+	.testimonial{
+		&__wysiwyg{}
+
+		&__attribution{}
+	}
+
+	.slick-track {
+	}
+
+	.slick-slide {
+	}
+
+	.slick-active {
+	}
+
+	.slick-arrow{
+		z-index: 20;
+		&:before{
+			color: $black;
+			font-size: rem-calc( 30 );
+		}
+	}
+	.slick-prev{
+		left: 0;
+		transform: translateX( -100% );
+	}
+	.slick-next{
+		right: 0;
+		transform: translateX( 100% );
+	}
+}
+
+.no-js{
+	.module--testimonial_slider{
+		@include fallbackAnimation(fadeInAnimation);;
+	}
+}

@@ -1,0 +1,627 @@
+{
+    "key": "group_5f85c0ed8c9a9",
+    "title": "Content Blocks: Archive",
+    "fields": [
+        {
+            "key": "field_62f8a75ae0107",
+            "label": "Post Section",
+            "name": "post_section",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 0,
+            "show_in_graphql": 1,
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_5f85c1165a41c",
+                    "label": "Post Types",
+                    "name": "",
+                    "aria-label": "",
+                    "type": "tab",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 0,
+                    "placement": "left",
+                    "endpoint": 0
+                },
+                {
+                    "key": "field_5f85c5525a41f",
+                    "label": "Post Types",
+                    "name": "post_types",
+                    "aria-label": "",
+                    "type": "group",
+                    "instructions": "Please select the post types available to display in this archive.",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 0,
+                    "show_in_graphql": 1,
+                    "layout": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5f85c57b5a420",
+                            "label": "Post Type",
+                            "name": "post_type",
+                            "aria-label": "",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "wpml_cf_preferences": 0,
+                            "show_in_graphql": 1,
+                            "choices": {
+                                "resource": "Resources",
+                                "events": "Events",
+                                "post": "Blog",
+                                "learn": "Learn"
+                            },
+                            "default_value": "resource",
+                            "return_format": "value",
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": ""
+                        }
+                    ]
+                },
+                {
+                    "key": "field_5f85c5375a41d",
+                    "label": "Filters",
+                    "name": "",
+                    "aria-label": "",
+                    "type": "tab",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 0,
+                    "placement": "left",
+                    "endpoint": 0
+                },
+                {
+                    "key": "field_62d4f10f393dc",
+                    "label": "Taxonomies",
+                    "name": "taxonomies",
+                    "aria-label": "",
+                    "type": "group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 0,
+                    "show_in_graphql": 1,
+                    "layout": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_62d4e9e7ba346",
+                            "label": "Products",
+                            "name": "products",
+                            "aria-label": "",
+                            "type": "taxonomy",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5f85c57b5a420",
+                                        "operator": "==",
+                                        "value": "post"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "field": "field_5f85c57b5a420",
+                                        "operator": "==",
+                                        "value": "resource"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "wpml_cf_preferences": 0,
+                            "show_in_graphql": 1,
+                            "taxonomy": "tri_general_products",
+                            "field_type": "select",
+                            "allow_null": 0,
+                            "add_term": 0,
+                            "save_terms": 0,
+                            "load_terms": 0,
+                            "return_format": "object",
+                            "multiple": 0
+                        },
+                        {
+                            "key": "field_62d4eec87178a",
+                            "label": "Regions",
+                            "name": "regions",
+                            "aria-label": "",
+                            "type": "taxonomy",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5f85c57b5a420",
+                                        "operator": "==",
+                                        "value": "events"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "wpml_cf_preferences": 0,
+                            "show_in_graphql": 1,
+                            "taxonomy": "tri_region",
+                            "field_type": "select",
+                            "allow_null": 0,
+                            "add_term": 0,
+                            "save_terms": 0,
+                            "load_terms": 0,
+                            "return_format": "object",
+                            "multiple": 0
+                        },
+                        {
+                            "key": "field_62d4f0accd41c",
+                            "label": "Resource Type",
+                            "name": "resource_type",
+                            "aria-label": "",
+                            "type": "taxonomy",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5f85c57b5a420",
+                                        "operator": "==",
+                                        "value": "resource"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "wpml_cf_preferences": 0,
+                            "show_in_graphql": 1,
+                            "taxonomy": "resource_type",
+                            "field_type": "select",
+                            "allow_null": 0,
+                            "add_term": 0,
+                            "save_terms": 0,
+                            "load_terms": 0,
+                            "return_format": "object",
+                            "multiple": 0
+                        },
+                        {
+                            "key": "field_6306778062f36",
+                            "label": "Resource Topic",
+                            "name": "resource_topic",
+                            "aria-label": "",
+                            "type": "taxonomy",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5f85c57b5a420",
+                                        "operator": "==",
+                                        "value": "resource"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "wpml_cf_preferences": 0,
+                            "show_in_graphql": 1,
+                            "taxonomy": "tri_resource_topics",
+                            "field_type": "select",
+                            "allow_null": 0,
+                            "add_term": 1,
+                            "save_terms": 0,
+                            "load_terms": 0,
+                            "return_format": "object",
+                            "multiple": 0
+                        },
+                        {
+                            "key": "field_6306788690276",
+                            "label": "Event type",
+                            "name": "event_type",
+                            "aria-label": "",
+                            "type": "taxonomy",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5f85c57b5a420",
+                                        "operator": "==",
+                                        "value": "events"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "show_in_graphql": 1,
+                            "taxonomy": "tri_event_type",
+                            "field_type": "select",
+                            "allow_null": 0,
+                            "add_term": 1,
+                            "save_terms": 0,
+                            "load_terms": 0,
+                            "return_format": "object",
+                            "wpml_cf_preferences": 0,
+                            "multiple": 0
+                        },
+                        {
+                            "key": "field_630678ab90277",
+                            "label": "Months",
+                            "name": "months",
+                            "aria-label": "",
+                            "type": "taxonomy",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5f85c57b5a420",
+                                        "operator": "==",
+                                        "value": "events"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "wpml_cf_preferences": 0,
+                            "show_in_graphql": 1,
+                            "taxonomy": "tri_events_month",
+                            "field_type": "select",
+                            "allow_null": 0,
+                            "add_term": 1,
+                            "save_terms": 0,
+                            "load_terms": 0,
+                            "return_format": "object",
+                            "multiple": 0
+                        },
+                        {
+                            "key": "field_6306796fa1edd",
+                            "label": "Categories",
+                            "name": "categories",
+                            "aria-label": "",
+                            "type": "taxonomy",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5f85c57b5a420",
+                                        "operator": "==",
+                                        "value": "post"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "show_in_graphql": 1,
+                            "taxonomy": "category",
+                            "field_type": "select",
+                            "allow_null": 0,
+                            "add_term": 1,
+                            "save_terms": 0,
+                            "load_terms": 0,
+                            "return_format": "object",
+                            "wpml_cf_preferences": 0,
+                            "multiple": 0
+                        },
+                        {
+                            "key": "field_652eb755510d4",
+                            "label": "Learn type",
+                            "name": "learn_type",
+                            "aria-label": "",
+                            "type": "taxonomy",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5f85c57b5a420",
+                                        "operator": "==",
+                                        "value": "learn"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "wpml_cf_preferences": 0,
+                            "show_in_graphql": 1,
+                            "taxonomy": "learntype",
+                            "add_term": 1,
+                            "save_terms": 0,
+                            "load_terms": 0,
+                            "return_format": "object",
+                            "field_type": "select",
+                            "allow_null": 0,
+                            "multiple": 0
+                        }
+                    ]
+                },
+                {
+                    "key": "field_5f85c7c3549f9",
+                    "label": "Search",
+                    "name": "search",
+                    "aria-label": "",
+                    "type": "true_false",
+                    "instructions": "Add a free form search field to archive.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 0,
+                    "show_in_graphql": 1,
+                    "message": "",
+                    "default_value": 1,
+                    "ui": 1,
+                    "ui_on_text": "",
+                    "ui_off_text": ""
+                }
+            ]
+        },
+        {
+            "key": "field_62f8a68fa5857",
+            "label": "Resource Section",
+            "name": "resource_section",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 0,
+            "show_in_graphql": 1,
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_62cdbac263a38",
+                    "label": "Resources Grid",
+                    "name": "resources_grid",
+                    "aria-label": "",
+                    "type": "clone",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 0,
+                    "clone": [
+                        "group_5f7bcb04a812c"
+                    ],
+                    "display": "seamless",
+                    "layout": "block",
+                    "prefix_label": 1,
+                    "prefix_name": 0
+                },
+                {
+                    "key": "field_62d12d443e5fe",
+                    "label": "Resources Grid Developer",
+                    "name": "resources_grid_developer",
+                    "aria-label": "",
+                    "type": "clone",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 0,
+                    "clone": [
+                        "group_5eed3680972b5"
+                    ],
+                    "display": "seamless",
+                    "layout": "block",
+                    "prefix_label": 0,
+                    "prefix_name": 0
+                }
+            ]
+        },
+        {
+            "key": "field_6555116b099cd",
+            "label": "Optional Related Resource Section",
+            "name": "related_resource_section",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5f85c57b5a420",
+                        "operator": "==",
+                        "value": "learn"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 0,
+            "show_in_graphql": 1,
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_6555116b099ce",
+                    "label": "Resources Grid",
+                    "name": "resources_grid",
+                    "aria-label": "",
+                    "type": "clone",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 0,
+                    "clone": [
+                        "group_5f7bcb04a812c"
+                    ],
+                    "display": "seamless",
+                    "layout": "block",
+                    "prefix_label": 1,
+                    "prefix_name": 0
+                },
+                {
+                    "key": "field_6555116b099cf",
+                    "label": "Resources Grid Developer",
+                    "name": "resources_grid_developer",
+                    "aria-label": "",
+                    "type": "clone",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 0,
+                    "clone": [
+                        "group_5eed3680972b5"
+                    ],
+                    "display": "seamless",
+                    "layout": "block",
+                    "prefix_label": 0,
+                    "prefix_name": 0
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "templates\/archive.php"
+            }
+        ]
+    ],
+    "menu_order": 30,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content"
+    ],
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "show_in_graphql": 1,
+    "graphql_field_name": "contentBlocksArchive",
+    "map_graphql_types_from_location_rules": 1,
+    "graphql_types": [
+        "ContentNode",
+        "Form",
+        "Logo",
+        "MediaItem",
+        "Page",
+        "Partner",
+        "Post",
+        "Resource",
+        "TeamMember",
+        "Testimonial",
+        "TermNode",
+        "Category",
+        "Department",
+        "Partnertype",
+        "PostFormat",
+        "ResourceIndustry",
+        "ResourceProduct",
+        "ResourceTopic",
+        "ResourceType",
+        "Tag",
+        "ContentTemplate",
+        "DefaultTemplate",
+        "Template_BasicOneColumn",
+        "Template_FixedModulesExample",
+        "Template_ModularWithSecondaryNav",
+        "Template_NewsroomMain",
+        "Template_Partners",
+        "Template_PricingDetail",
+        "Template_PricingMain",
+        "Template_ProductDemoForm",
+        "Comment",
+        "Menu",
+        "MenuItem",
+        "User",
+        "ThemeGeneralSettings",
+        "Options404Settings"
+    ],
+    "modified": 1700074230
+}

@@ -1,0 +1,88 @@
+$element__button__percentage: 10% !default;
+$element__button__border__color: transparent !default;
+$element__button__border__width: 1px !default;
+$element__button__background__color: $primary !default;
+$element__button__background__color__hover: lighten( $element__button__background__color, $element__button__percentage ) !default;
+$element__button__background__color__focus: lighten( $element__button__background__color, $element__button__percentage ) !default;
+$element__button__transition: $global-transition !default;
+$element__button__border__radius: 0px !default;
+$element__button__font__size: rem-calc( 16 ) !default;
+$element__button__padding: rem-calc( 16 32 ) !default;
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+.button {
+	background: $element__button__background__color;
+	border: $element__button__border__width solid transparent;
+	border-radius: $element__button__border__radius;
+	cursor: pointer;
+	padding: $element__button__padding;
+	transition: $element__button__transition;
+
+	color: $white;
+	font-size: $element__button__font__size;
+	line-height: 1;
+	text-decoration: none;
+
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+
+
+	&:hover {
+		color: $white;
+		background: lighten( $element__button__background__color, $element__button__percentage )
+	}
+
+	&:active,
+	&:focus {
+		border-color: transparent;
+		outline: none;
+	}
+
+	@each $name, $color in $button-colors{
+		&.button--#{$name}{
+			background-color: $color;
+			background: lighten( $color, $element__button__percentage )
+		}
+	}
+}
+
+.button{
+
+	&--link{
+		padding: 0;
+		color: $element__button__background__color;
+		background: transparent;
+
+		&:hover{
+			color: $element__button__background__color__hover;
+			background: transparent;
+		}
+	}
+
+	&--outline{
+		background: $white;
+		border: $element__button__border__width solid $primary;
+		color: $element__button__background__color;
+
+		&:hover{
+			color: $white;
+		}
+
+		@each $name, $color in $button-colors{
+
+			&.button--#{$name}{
+				background: $white;
+				border: $element__button__border__width solid $color;
+				color: $color;
+				&:hover{
+					color: $color;
+				}
+			}
+
+		}
+	}
+}

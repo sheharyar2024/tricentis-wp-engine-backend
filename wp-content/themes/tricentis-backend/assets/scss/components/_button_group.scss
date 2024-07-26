@@ -1,0 +1,31 @@
+$button-group-between-columns: 8 !default;
+$button-group-between-rows: 8 !default;
+
+.button-group{
+	width: 100%;
+
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+
+	margin-top: rem-calc( -$button-group-between-rows );
+	margin-bottom: rem-calc( -$button-group-between-rows );
+	margin-left: rem-calc( -$button-group-between-columns );
+	margin-right: rem-calc( -$button-group-between-columns );
+
+	&--align-left{
+		justify-content: flex-start;
+	}
+
+	&--align-center{
+		justify-content: center;
+	}
+
+	&--align-right{
+		justify-content: flex-end;
+	}
+
+	.button{
+		margin: rem-calc( $button-group-between-rows $button-group-between-columns );
+	}
+}

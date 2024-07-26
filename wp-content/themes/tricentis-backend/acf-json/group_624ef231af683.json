@@ -1,0 +1,59 @@
+{
+    "key": "group_624ef231af683",
+    "title": "Support: Alignment",
+    "fields": [
+        {
+            "key": "field_624ef26962718",
+            "label": "Alignment",
+            "name": "alignment",
+            "type": "button_group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 0,
+            "show_in_graphql": 1,
+            "choices": {
+                "left": "<span class=\"dashicons dashicons-editor-alignleft\"><\/span> Left",
+                "center": "<span class=\"dashicons dashicons-editor-aligncenter\"><\/span> Center",
+                "right": "<span class=\"dashicons dashicons-editor-alignright\"><\/span> Right"
+            },
+            "allow_null": 0,
+            "default_value": "left",
+            "layout": "horizontal",
+            "return_format": "value"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            },
+            {
+                "param": "post_type",
+                "operator": "!=",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "show_in_graphql": 0,
+    "graphql_field_name": "support:Alignment",
+    "map_graphql_types_from_location_rules": 0,
+    "graphql_types": "",
+    "modified": 1660954659
+}

@@ -1,0 +1,90 @@
+{
+    "key": "group_639fc2edd7a86",
+    "title": "Support: Mega Menu item location",
+    "fields": [
+        {
+            "key": "field_639fc4307d1df",
+            "label": "Column",
+            "name": "column",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "30",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 0,
+            "show_in_graphql": 1,
+            "choices": {
+                "default": "Default",
+                "one": "One",
+                "two": "Two",
+                "three": "Three",
+                "four": "Four"
+            },
+            "default_value": "default",
+            "allow_null": 1,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "nav_menu_item",
+                "operator": "==",
+                "value": "location\/product-megamenu"
+            }
+        ],
+        [
+            {
+                "param": "nav_menu_item",
+                "operator": "==",
+                "value": "location\/solutions-megamenu"
+            }
+        ],
+        [
+            {
+                "param": "nav_menu_item",
+                "operator": "==",
+                "value": "location\/service-megamenu"
+            }
+        ],
+        [
+            {
+                "param": "nav_menu_item",
+                "operator": "==",
+                "value": "location\/resources-megamenu"
+            }
+        ],
+        [
+            {
+                "param": "nav_menu_item",
+                "operator": "==",
+                "value": "location\/pricing-megamenu"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "show_in_graphql": 1,
+    "graphql_field_name": "megaMenuItemLocation",
+    "map_graphql_types_from_location_rules": 1,
+    "graphql_types": [
+        "Menu",
+        "MenuItem"
+    ],
+    "modified": 1674495288
+}

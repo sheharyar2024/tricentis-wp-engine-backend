@@ -1,0 +1,88 @@
+{
+    "key": "group_62a8bc6013646",
+    "title": "Support: Icon — Iconmoon",
+    "fields": [
+        {
+            "key": "field_62a8bc60169d9",
+            "label": "Icon Wrapper",
+            "name": "icon_wrapper",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 0,
+            "show_in_graphql": 1,
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_62a8bc60182a3",
+                    "label": "Support Icon",
+                    "name": "support_icon",
+                    "type": "narwhal_icons",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "80",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 0,
+                    "show_in_graphql": 1,
+                    "allow_null": 1,
+                    "placeholder": "",
+                    "readonly": false,
+                    "disabled": false,
+                    "choices": []
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            },
+            {
+                "param": "post_type",
+                "operator": "!=",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "show_in_graphql": 1,
+    "graphql_field_name": "iconMoon",
+    "map_graphql_types_from_location_rules": 1,
+    "graphql_types": [
+        "ContentNode",
+        "CaseStudy",
+        "Event",
+        "Form",
+        "Logo",
+        "MediaItem",
+        "News",
+        "Page",
+        "Partner",
+        "Post",
+        "Resource",
+        "TeamMember",
+        "Testimonial"
+    ],
+    "modified": 1660985150
+}

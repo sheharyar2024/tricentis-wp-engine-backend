@@ -1,0 +1,52 @@
+{
+    "key": "group_60302c9438eea",
+    "title": "Support: Form",
+    "fields": [
+        {
+            "key": "field_60302cc449d6c",
+            "label": "Message",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 0,
+            "message": "Dear Developer: You should find out from the PM what the client uses for Forms.  Once you determine that, you can set up this module correctly.  Either with a Gravity Form selection or an embed area.  Maybe an optional title and description.",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            },
+            {
+                "param": "post_type",
+                "operator": "!=",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "This provides a pivot point for forms.  So, if there are multiple providers or providers change, we have a way of pivoting in a global manner.",
+    "show_in_rest": 0,
+    "show_in_graphql": 0,
+    "graphql_field_name": "support:Form",
+    "map_graphql_types_from_location_rules": 0,
+    "graphql_types": "",
+    "modified": 1660984725
+}

@@ -1,0 +1,41 @@
+$element__forms__border__color: $black !default;
+$element__forms__border__radius: rem-calc( 3px ) !default;
+$element__forms__border__width: 1px !default;
+$element__forms__color: $black !default;
+$element__forms__color__focus: $black !default;
+$element__forms__font: $font !default;
+$element__forms__font__size: rem-calc( 16 ) !default;
+$element__forms__padding: rem-calc( 3 ) !default;
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+optgroup,
+select,
+textarea {
+	border: $element__forms__border__width solid $element__forms__border__color;
+	border-radius: $element__forms__border__radius;
+	padding: $element__forms__padding;
+	width: 100%;
+
+	color: $element__forms__color__focus;
+	font-family: $element__forms__font;
+	font-size: $element__forms__font__size;
+	line-height: 1;
+
+	&:focus {
+		color: $element__forms__color__focus;
+	}
+}

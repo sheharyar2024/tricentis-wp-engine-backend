@@ -1,0 +1,15 @@
+.padding{
+
+	@each $name, $spacing in $padding-options{
+
+		&--top-#{$name}{
+			padding-top: $spacing;
+		}
+
+		&--bottom-#{$name}{
+			padding-bottom: $spacing;
+		}
+
+	}
+
+}

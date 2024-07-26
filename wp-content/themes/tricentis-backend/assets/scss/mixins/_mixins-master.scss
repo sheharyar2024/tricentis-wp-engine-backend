@@ -1,0 +1,104 @@
+@mixin absolute-center{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate( -50%, -50% );
+}
+
+@mixin absolute-center-horizontal{
+	position: absolute;
+	left: 50%;
+	transform: translateX( -50% );
+}
+
+@mixin absolute-center-vertical{
+	position: absolute;
+	top: 50%;
+	transform: translateY( -50% );
+}
+
+@mixin absolute-full{
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+// Center block
+@mixin center-block {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+// Clearfix
+@mixin clearfix() {
+	content: "";
+	display: table;
+	table-layout: fixed;
+}
+
+// Clear after (not all clearfix need this also)
+@mixin clearfix-after() {
+	clear: both;
+}
+
+@mixin imageObjectFit($fit: cover) {
+	@if ($fit == "contain") {
+		height: auto;
+		left: 0;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 100%;
+
+		@supports (object-fit: contain) {
+			height: 100%;
+			left: 0;
+			object-fit: contain;
+			object-position: center;
+			top: 0;
+			transform: none;
+			width: 100%;
+		}
+	} @else {
+		height: auto;
+		left: 0;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 100%;
+
+		@supports (object-fit: cover) {
+			height: 100%;
+			left: 0;
+			object-fit: cover;
+			object-position: center;
+			top: 0;
+			transform: none;
+			width: 100%;
+		}
+	}
+}
+
+@keyframes fadeInAnimation {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@mixin fallbackAnimation($animation){
+	animation-name: #{$animation};
+	animation-duration: 0.3s;
+	animation-delay: 1s;
+	animation-fill-mode: forwards;
+	animation-iteration-count: 1;
+	animation-timing-function: linear;
+}
+
+@import "media_queries";
+@import "rem_calc";

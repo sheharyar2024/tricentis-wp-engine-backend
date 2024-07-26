@@ -1,0 +1,31 @@
+.module--data_box{
+	opacity: 0;
+
+	.content{
+	}
+
+	.title{
+	}
+
+	.wysiwyg{
+	}
+
+	.title + .wysiwyg{
+	}
+
+	.module--data-box__boxes{
+	}
+
+	.data-box{
+		&__title{
+		}
+		&__wysiwyg{
+		}
+	}
+}
+
+.no-js{
+	.module--data_box{
+		@include fallbackAnimation(fadeInAnimation);;
+	}
+}

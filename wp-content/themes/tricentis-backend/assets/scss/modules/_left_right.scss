@@ -1,0 +1,50 @@
+.module--left_right {
+	opacity: 0;
+
+	&__row{
+		align-items: center;
+	}
+
+	.image-container {
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+
+	.content-container {
+	}
+
+	.prehead {
+	}
+
+	.title {
+		text-align: left;
+	}
+
+	.wysiwyg{
+	}
+
+	//use these areas to adjust padding depending on the content side
+	.content-on-left{
+		@include respond-above(md){
+			flex-direction: row-reverse;
+		}
+		.image-container{
+		}
+		.content-container{
+		}
+	}
+	.content-on-right{
+		.image-container{
+		}
+		.content-container{
+		}
+	}
+}
+
+.no-js{
+	.module--left_right{
+		@include fallbackAnimation(fadeInAnimation);;
+	}
+}

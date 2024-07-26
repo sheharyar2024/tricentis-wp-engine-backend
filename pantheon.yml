@@ -1,0 +1,11 @@
+# Put overrides to your pantheon.upstream.yml file here.
+# For more information, see: https://pantheon.io/docs/pantheon-yml/
+api_version: 1
+php_version: 7.4
+
+workflows:
+  clone_database:
+    after:
+      - type: webphp
+        description: Plugins Quicksilver
+        script: plugins-quicksilver.php

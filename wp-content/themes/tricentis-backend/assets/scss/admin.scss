@@ -1,0 +1,72 @@
+@import "vars";
+@import "mixins/mixins-master";
+
+@each $name, $color in $background-colors{
+
+	.#{$name}-background-box{
+		height: 15px;
+		width: 15px;
+		background: $color;
+		border: 1px solid rgba(0,0,0,.4);
+	}
+
+}
+
+.acf-nw-title{
+	display: inline-flex;
+	align-items: center;
+
+	&-thumbnail{
+		width: 150px;
+		margin: 0 10px 0 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		top: 0;
+		transform: translateY( -10px );
+
+		&-wrap{
+			position: absolute;
+			padding: 3px;
+			border: 1px solid black;
+			border-radius: 3px;
+			line-height: 0;
+		}
+
+		img{
+			max-width: 100%;
+			max-height: 44px;
+			object-fit: contain;
+		}
+
+	}
+
+	&-general{
+		font-weight: bold;
+		&:after{
+			content: ':';
+		}
+	}
+
+	&-specific{
+		margin-left: 5px;
+	}
+}
+
+.acf-fields{
+
+	.acf-field[data-name="button_group"]{
+		padding: 0;
+
+		& > .acf-label{
+			display: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		.acf-fields{
+			border: none !important;
+		}
+	}
+
+}

@@ -1,0 +1,46 @@
+.module--side_scroller{
+	opacity: 0;
+
+	.side-scroller{
+		&__row{
+		}
+		
+		&__sticky{
+			position: sticky;
+			top: 1em;
+		}
+
+		&__navigation{
+			display: flex;
+
+			&-index{
+				background: $secondary;
+				width: 10px;
+				height: 10px;
+				border-radius: 100%;
+				margin-right: 6px;
+				&:last-of-type{
+					margin-right: 0;
+				}
+
+				&.active{
+					background: $primary;
+				}
+			}
+		}
+
+		&__section{
+			transition: $global-transition;
+			opacity: 0.7;
+			&.activated{
+				opacity: 1;
+			}
+		}
+	}
+}
+
+.no-js{
+	.module--side_scroller{
+		@include fallbackAnimation(fadeInAnimation);;
+	}
+}

@@ -1,0 +1,33 @@
+{
+    "key": "group_62aa4fd4082f2",
+    "title": "Settings: Servicenow API Credentials",
+    "fields": [],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "marketo-settings"
+            },
+            {
+                "param": "options_page",
+                "operator": "!=",
+                "value": "marketo-settings"
+            }
+        ]
+    ],
+    "menu_order": 40,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": false,
+    "description": "",
+    "show_in_rest": 0,
+    "show_in_graphql": 0,
+    "graphql_field_name": "settings:ServiceNowApi",
+    "map_graphql_types_from_location_rules": 0,
+    "graphql_types": "",
+    "modified": 1658858469
+}

@@ -1,0 +1,160 @@
+{
+    "key": "group_65d392453f2b7",
+    "title": "Support: Actions optional",
+    "fields": [
+        {
+            "key": "field_65d392457de70",
+            "label": "Actions",
+            "name": "actions",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 0,
+            "show_in_graphql": 1,
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "block",
+            "button_label": "Add Action",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_65d3924589626",
+                    "label": "Function",
+                    "name": "function",
+                    "aria-label": "",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 0,
+                    "show_in_graphql": 1,
+                    "choices": {
+                        "default": "Link"
+                    },
+                    "default_value": "default",
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "return_format": "value",
+                    "ajax": 0,
+                    "placeholder": "",
+                    "parent_repeater": "field_65d392457de70"
+                },
+                {
+                    "key": "field_65d392458d0c6",
+                    "label": "Link",
+                    "name": "link",
+                    "aria-label": "",
+                    "type": "link",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_65d3924589626",
+                                "operator": "==",
+                                "value": "default"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 0,
+                    "show_in_graphql": 1,
+                    "return_format": "array",
+                    "parent_repeater": "field_65d392457de70"
+                },
+                {
+                    "key": "field_65d3924590b5e",
+                    "label": "SEO Text",
+                    "name": "seo_text",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "This field is used as the title attribute where appropriate to provide additional context to search engines.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 0,
+                    "show_in_graphql": 1,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "parent_repeater": "field_65d392457de70"
+                },
+                {
+                    "key": "field_65d39245945d6",
+                    "label": "ADA Text",
+                    "name": "ada_text",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "This is used to provide additional context to people using screen readers.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 0,
+                    "show_in_graphql": 1,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "parent_repeater": "field_65d392457de70"
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            },
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "Button repeater group with all the fields we have identified useful in the past.",
+    "show_in_rest": 0,
+    "show_in_graphql": 0,
+    "graphql_field_name": "supportActions",
+    "map_graphql_types_from_location_rules": 0,
+    "graphql_types": "",
+    "modified": 1708364970
+}

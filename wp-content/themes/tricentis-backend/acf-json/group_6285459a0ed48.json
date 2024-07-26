@@ -1,0 +1,923 @@
+{
+    "key": "group_6285459a0ed48",
+    "title": "Support: Select form",
+    "fields": [
+        {
+            "key": "field_6491ae9478c50",
+            "label": "Form Headline",
+            "name": "form_headline",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 0,
+            "show_in_graphql": 1,
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_628545a9f13fe",
+            "label": "Select Form",
+            "name": "select_form",
+            "aria-label": "",
+            "type": "post_object",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 0,
+            "show_in_graphql": 1,
+            "post_type": [
+                "form"
+            ],
+            "taxonomy": "",
+            "allow_null": 0,
+            "multiple": 0,
+            "return_format": "object",
+            "ui": 1,
+            "bidirectional_target": []
+        },
+        {
+            "key": "field_628d59fa891a9",
+            "label": "Reporting Title",
+            "name": "reporting_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 0,
+            "show_in_graphql": 1,
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_628d4dc88f5dd",
+            "label": "Persona",
+            "name": "persona",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "choices": {
+                "technology_leadership": "Technology Leadership",
+                "business_applications": "Business Applications",
+                "strategic_quality": "Strategic Quality",
+                "strategic_it": "Strategic IT",
+                "tactical_tester": "Tactical Tester",
+                "tactical_user": "Tactical User",
+                "strategic_salesforce": "Strategic Salesforce",
+                "strategic_sap": "Strategic SAP",
+                "strategic_di": "Strategic DI",
+                "strategic_servicenow": "Strategic ServiceNow",
+                "strategic_it_expansion": "Strategic IT Expansion",
+                "strategic_quality_expansion": "Strategic Quality Expansion",
+                "strategic_sap_expansion": "Strategic SAP Expansion",
+                "strategic_oracle": "Strategic Oracle",
+                "developer": "Developer"
+            },
+            "default_value": [],
+            "allow_null": 0,
+            "multiple": 1,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_628d5a1332cf0",
+            "label": "Initiative",
+            "name": "initiative",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "choices": {
+                "sap_testing": "SAP testing",
+                "salesforce_testing": "Salesforce testing",
+                "cost_savings": "Cost savings",
+                "sap_expansion_general": "SAP expansion - general",
+                "sap_ expansion_uft_replacement": "SAP expansion - UFT replacement",
+                "agile_test_management": "Agile test management",
+                "test_automation": "Test automation",
+                "service_now_testing": "Service Now testing",
+                "load_testing": "Load testing",
+                "cio": "CIO",
+                "data_integrity": "Data integrity",
+                "tricentis_platform": "Tricentis Platform",
+                "cloud": "Cloud",
+                "sap_cloud": "SAP cloud",
+                "fed": "Fed",
+                "healthcare_life_sciences": "Healthcare life sciences",
+                "oracle_testing": "Oracle testing"
+            },
+            "default_value": [],
+            "allow_null": 0,
+            "multiple": 1,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_628d509108ef5",
+            "label": "Stage",
+            "name": "stage",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 0,
+            "show_in_graphql": 1,
+            "choices": {
+                "prospect": "Prospect",
+                "engaged": "Engaged",
+                "qualified_engaged": "Qualified Engaged",
+                "qualified_lead_warm": "Qualified Lead - Warm",
+                "qualified_lead_hot": "Qualified Lead - Hot",
+                "qualified_lead_priority": "Qualified Lead - Priority"
+            },
+            "default_value": false,
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_628d59e9401d5",
+            "label": "CO Code",
+            "name": "co_code",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 0,
+            "show_in_graphql": 1,
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_628d5b3ede5dc",
+            "label": "Product",
+            "name": "product",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 1,
+            "show_in_graphql": 1,
+            "choices": {
+                "tricentis_tosca": "Tricentis Tosca",
+                "tricentis_livecompare": "Tricentis LiveCompare",
+                "tricentis_qtest": "Tricentis qTest",
+                "tricentis_flood": "Tricentis Flood",
+                "tta_for_servicenow": "TTA for ServiceNow",
+                "tricentis_data_integrity": "Tricentis Data Integrity",
+                "tricentis_platform": "Tricentis Platform",
+                "tta_for_workday": "TTA for Workday",
+                "tta_for_salesforce": "TTA for Salesforce",
+                "tricentis_sap_solution": "Tricentis SAP solution",
+                "tricentis_salesforce_solution": "Tricentis Salesforce solution",
+                "tricentis_neoload": "Tricentis NeoLoad",
+                "tricentis_vera": "Tricentis Vera",
+                "tricentis_testim": "Tricentis Testim",
+                "ttm_for_jira": "TTM for Jira",
+                "tta": "TTA",
+                "testim_mobile": "Testim Mobile",
+                "tosca_mobile": "Tosca Mobile"
+            },
+            "default_value": false,
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_628d5c9db7320",
+            "label": "Content Type",
+            "name": "type",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 0,
+            "show_in_graphql": 1,
+            "choices": {
+                "analyst_research": "Analyst Research",
+                "webinar": "Webinar",
+                "white_paper": "White Paper",
+                "academy": "Academy",
+                "marketplace": "Marketplace",
+                "conference_highlights": "Conference Highlights",
+                "guides_Insights": "Guides & Insights",
+                "ebook": "eBook",
+                "accelerator": "Accelerator",
+                "event": "Event",
+                "product_offer": "Product Offer",
+                "survey": "Survey",
+                "demo_video": "Demo Video",
+                "program_tracking": "Program Tracking",
+                "contact_us_accelerator": "Contact Us (Accelerator)",
+                "demo_request_accelerator": "Demo Request (Accelerator)",
+                "demo_video_accelerator": "Demo Video (Accelerator)",
+                "pricing_request_accelerator": "Pricing Request (Accelerator)",
+                "trial_sign_up_accelerator": "Trial Sign Up (Accelerator)",
+                "demo_interactive": "Demo Interactive (Demo clickthrough)"
+            },
+            "default_value": false,
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_62ace3b0c76b5",
+            "label": "Next Form",
+            "name": "next_form",
+            "aria-label": "",
+            "type": "post_object",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 0,
+            "show_in_graphql": 1,
+            "post_type": [
+                "form"
+            ],
+            "taxonomy": "",
+            "allow_null": 1,
+            "multiple": 0,
+            "return_format": "object",
+            "ui": 1,
+            "bidirectional_target": []
+        },
+        {
+            "key": "field_62b0d3479cf65",
+            "label": "Redirect URL",
+            "name": "redirect_url",
+            "aria-label": "",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 0,
+            "show_in_graphql": 1,
+            "return_format": "array"
+        },
+        {
+            "key": "field_63626d63232f6",
+            "label": "Marketing Opt In Checkbox",
+            "name": "marketing_opt_in_checkbox",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "This must be on any trial form where a user will be using our product as a result.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_628d5c9db7320",
+                        "operator": "==",
+                        "value": "accelerator"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_628d5c9db7320",
+                        "operator": "==",
+                        "value": "contact_us_accelerator"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_628d5c9db7320",
+                        "operator": "==",
+                        "value": "demo_request_accelerator"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_628d5c9db7320",
+                        "operator": "==",
+                        "value": "demo_video_accelerator"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_628d5c9db7320",
+                        "operator": "==",
+                        "value": "pricing_request_accelerator"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_628d5c9db7320",
+                        "operator": "==",
+                        "value": "trial_sign_up_accelerator"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 0,
+            "show_in_graphql": 1,
+            "choices": {
+                "explicit": "Explicit (must be checked by user)",
+                "implicit": "Implicit (hidden onload and is checked when form is submitted)"
+            },
+            "default_value": "explicit",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_635c39220be21",
+            "label": "Terms Opt In Checkbox",
+            "name": "terms_opt_in_checkbox",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "This must be on any trial form where a user will be using our product as a result.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_628d5c9db7320",
+                        "operator": "==",
+                        "value": "accelerator"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_628d5c9db7320",
+                        "operator": "==",
+                        "value": "contact_us_accelerator"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_628d5c9db7320",
+                        "operator": "==",
+                        "value": "demo_request_accelerator"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_628d5c9db7320",
+                        "operator": "==",
+                        "value": "demo_video_accelerator"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_628d5c9db7320",
+                        "operator": "==",
+                        "value": "pricing_request_accelerator"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_628d5c9db7320",
+                        "operator": "==",
+                        "value": "trial_sign_up_accelerator"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 0,
+            "show_in_graphql": 1,
+            "choices": {
+                "hide": "Hide (hidden and not submitted)",
+                "explicit": "Explicit (must be checked by user)",
+                "implicit": "Implicit (hidden onload and is checked when form is submitted)"
+            },
+            "default_value": "explicit",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_6296629dfbd1c",
+            "label": "Consent Checkbox",
+            "name": "consent_checkbox",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "NOTE: The frontend does not currently support multiple custom checkboxes (regardless of how Checkbox ID is set). Entered Checkbox Content will be used for all custom form checkboxes.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 0,
+            "show_in_graphql": 1,
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "Add Checkbox",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_6296632ffbd1d",
+                    "label": "Checkbox ID",
+                    "name": "checkbox_id",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "35",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 0,
+                    "show_in_graphql": 1,
+                    "default_value": "partnerOptin",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "parent_repeater": "field_6296629dfbd1c"
+                },
+                {
+                    "key": "field_629663de16e56",
+                    "label": "Checkbox Content",
+                    "name": "checkbox_content",
+                    "aria-label": "",
+                    "type": "wysiwyg",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "65",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 0,
+                    "show_in_graphql": 1,
+                    "default_value": "",
+                    "tabs": "all",
+                    "toolbar": "basic",
+                    "media_upload": 0,
+                    "delay": 0,
+                    "parent_repeater": "field_6296629dfbd1c"
+                }
+            ]
+        },
+        {
+            "key": "field_629665658704d",
+            "label": "Combobox Choices",
+            "name": "combobox_choices",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 0,
+            "show_in_graphql": 1,
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "Add Combobox",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_629665768704e",
+                    "label": "Combobox ID",
+                    "name": "combobox_id",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "15",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 0,
+                    "show_in_graphql": 1,
+                    "default_value": "regionTimeZone",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "parent_repeater": "field_629665658704d"
+                },
+                {
+                    "key": "field_629665a08704f",
+                    "label": "Combobox Label",
+                    "name": "combobox_label",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "25",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 0,
+                    "show_in_graphql": 1,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "parent_repeater": "field_629665658704d"
+                },
+                {
+                    "key": "field_629665af87050",
+                    "label": "Combobox Choices",
+                    "name": "combobox_choices",
+                    "aria-label": "",
+                    "type": "repeater",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "60",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 0,
+                    "show_in_graphql": 1,
+                    "collapsed": "",
+                    "min": 0,
+                    "max": 0,
+                    "layout": "table",
+                    "button_label": "Add Choice",
+                    "rows_per_page": 20,
+                    "parent_repeater": "field_629665658704d",
+                    "sub_fields": [
+                        {
+                            "key": "field_629665c487051",
+                            "label": "Choice name",
+                            "name": "choice_name",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "wpml_cf_preferences": 0,
+                            "show_in_graphql": 1,
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": "",
+                            "parent_repeater": "field_629665af87050"
+                        },
+                        {
+                            "key": "field_629665df87052",
+                            "label": "Choice value",
+                            "name": "choice_value",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "wpml_cf_preferences": 0,
+                            "show_in_graphql": 1,
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": "",
+                            "parent_repeater": "field_629665af87050"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "key": "field_62b4adfec97dc",
+            "label": "Fremium emails?",
+            "name": "fremium_emails",
+            "aria-label": "",
+            "type": "checkbox",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 0,
+            "show_in_graphql": 1,
+            "choices": {
+                "allow_fremium_emails": "Allow fremium emails?"
+            },
+            "allow_custom": 0,
+            "default_value": [],
+            "layout": "vertical",
+            "toggle": 0,
+            "return_format": "value",
+            "save_custom": 0,
+            "custom_choice_button_text": "Add new choice"
+        },
+        {
+            "key": "field_62b5c245f58c3",
+            "label": "Resource Form CTA",
+            "name": "resource_form_cta",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Custom text to use for the submit button",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 0,
+            "show_in_graphql": 1,
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_63a9dbd78d643",
+            "label": "Custom Thank You",
+            "name": "custom_thank_you",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 0,
+            "show_in_graphql": 1,
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_6697849a21fce",
+            "label": "Enable Toggle",
+            "name": "enable_toggle",
+            "aria-label": "",
+            "type": "radio",
+            "instructions": "Enables a switch toggle on top of the form.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "on": "On",
+                "off": "Off"
+            },
+            "default_value": "off",
+            "return_format": "value",
+            "allow_null": 0,
+            "other_choice": 0,
+            "layout": "horizontal",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_6690f888b223e",
+            "label": "Toggle",
+            "name": "toggle",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6697849a21fce",
+                        "operator": "==",
+                        "value": "on"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "table",
+            "pagination": 0,
+            "min": 0,
+            "max": 3,
+            "collapsed": "",
+            "button_label": "Add Row",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_6690f8c1b223f",
+                    "label": "Label",
+                    "name": "label",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_6690f888b223e"
+                },
+                {
+                    "key": "field_6690f908b2240",
+                    "label": "Value",
+                    "name": "value",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_6690f888b223e"
+                },
+                {
+                    "key": "field_6690fbf2cb3d5",
+                    "label": "Default selection",
+                    "name": "default_selection",
+                    "aria-label": "",
+                    "type": "checkbox",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "selected": "selected"
+                    },
+                    "default_value": [],
+                    "return_format": "value",
+                    "allow_custom": 0,
+                    "layout": "vertical",
+                    "toggle": 0,
+                    "save_custom": 0,
+                    "custom_choice_button_text": "Add new choice",
+                    "parent_repeater": "field_6690f888b223e"
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            },
+            {
+                "param": "post_type",
+                "operator": "!=",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1721222619
+}

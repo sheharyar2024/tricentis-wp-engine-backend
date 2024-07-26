@@ -1,0 +1,35 @@
+{
+	"name": "TricentisBackend",
+	"version": "1.0.0",
+	"description": "This is a WordPress repository configured to run on the [Pantheon platform](https://pantheon.io).",
+	"main": "index.js",
+	"pantheon": {
+		"site": "tricentis-backend",
+		"env": "live"
+	},
+	"theme": "tricentis-backend",
+	"scripts": {
+		"build": "cd wp-content/themes/$npm_package_theme/ && gulp && gulp watch",
+		"setup": "npm run setup:pantheon && npm run latest",
+		"setup:pantheon": "git remote add pantheon $(terminus connection:info --field=git_url $npm_package_pantheon_site.dev)",
+		"setup:deploy": "git clone --depth 1 --no-single-branch $(terminus connection:info --field=git_url $npm_package_pantheon_site.dev) /tmp/build",
+		"deploy": "npm run deploy:build && npm run deploy:sync && npm run deploy:status && npm run deploy:push",
+		"deploy:build": "echo $(cd wp-content/themes/$npm_package_theme/ && npm install && gulp && gulp prod)",
+		"deploy:sync": "rsync -av --exclude='.git' . /tmp/build  --delete",
+		"deploy:status": "export COMMIT_MSG=$(git log -1 --pretty=%B) && echo $(git -C /tmp/build add -f wp-content/themes/$npm_package_theme/assets/build/* && git -C /tmp/build add -f wp-content/themes/$npm_package_theme/assets/dist/* && git -C /tmp/build add . && git -C /tmp/build commit -m \"$COMMIT_MSG\" && git -C /tmp/build status)",
+		"deploy:push": "echo $(git -C /tmp/build push origin)",
+		"latest": "npm run latest:files && npm run latest:db",
+		"latest:files": "rm ../uploads.tar.gz || true && rm -rf wp-content/uploads || true && terminus backup:get $npm_package_pantheon_site.$npm_package_pantheon_env --element=files --to=../uploads.tar.gz && tar -xvzf ../uploads.tar.gz && mv files_live wp-content/uploads && rm ../uploads.tar.gz",
+		"latest:db": "rm ../latest.sql.gz || true && rm ../latest.sql || true && terminus backup:get $npm_package_pantheon_site.$npm_package_pantheon_env --element=db --to=../latest.sql.gz && gunzip ../latest.sql.gz && wp db import ../latest.sql",
+		"pantheon:clear": "terminus env:clear-cache $npm_package_pantheon_site.dev",
+		"pantheon:cleardevelop": "terminus env:clear-cache $npm_package_pantheon_site.develop"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git@bitbucket.org:narwhal-digital/tricentis-backend.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"homepage": "https://bitbucket.org/narwhal-digital/tricentis-backend#readme"
+}

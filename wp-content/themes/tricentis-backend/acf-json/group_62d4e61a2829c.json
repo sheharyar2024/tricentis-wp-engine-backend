@@ -1,0 +1,245 @@
+{
+    "key": "group_62d4e61a2829c",
+    "title": "Support: Background Options with Icon Colors set 1 TR",
+    "fields": [
+        {
+            "key": "field_62d4e61a2db2c",
+            "label": "Type",
+            "name": "type",
+            "type": "button_group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "30",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 0,
+            "show_in_graphql": 1,
+            "choices": {
+                "color": "Color",
+                "pattern": "Pattern"
+            },
+            "allow_null": 0,
+            "default_value": "color",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_62d4e61a2db32",
+            "label": "Color",
+            "name": "color",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_62d4e61a2db2c",
+                        "operator": "==",
+                        "value": "color"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "70",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 0,
+            "show_in_graphql": 1,
+            "choices": {
+                "none": "None",
+                "blaze": "Blaze",
+                "tricentis_blue": "Tricentis Blue"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "default_value": "",
+            "layout": "horizontal",
+            "return_format": "value",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_62d4e61a2db36",
+            "label": "Pattern",
+            "name": "pattern",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_62d4e61a2db2c",
+                        "operator": "==",
+                        "value": "pattern"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "70",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 0,
+            "show_in_graphql": 1,
+            "choices": {
+                "blaze_pattern": "Blaze Pattern",
+                "tricentis_blue_pattern": "Tricentis Blue Pattern"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "default_value": "",
+            "layout": "horizontal",
+            "return_format": "value",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_62d4e695afafc",
+            "label": "Icon Color",
+            "name": "icon_color_1",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_62d4e61a2db2c",
+                        "operator": "==",
+                        "value": "color"
+                    },
+                    {
+                        "field": "field_62d4e61a2db32",
+                        "operator": "==",
+                        "value": "blaze"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_62d4e61a2db2c",
+                        "operator": "==",
+                        "value": "color"
+                    },
+                    {
+                        "field": "field_62d4e61a2db32",
+                        "operator": "==",
+                        "value": "tricentis_blue"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_62d4e61a2db2c",
+                        "operator": "==",
+                        "value": "pattern"
+                    },
+                    {
+                        "field": "field_62d4e61a2db36",
+                        "operator": "==",
+                        "value": "blaze_pattern"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_62d4e61a2db2c",
+                        "operator": "==",
+                        "value": "pattern"
+                    },
+                    {
+                        "field": "field_62d4e61a2db36",
+                        "operator": "==",
+                        "value": "tricentis_blue_pattern"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 0,
+            "show_in_graphql": 1,
+            "choices": {
+                "bolt": "Bolt",
+                "white": "White",
+                "accelerate": "Accelerate",
+                "thruster": "Thruster"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "default_value": "",
+            "layout": "horizontal",
+            "return_format": "value",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_62d4e7325b4ba",
+            "label": "Icon Color",
+            "name": "icon_color_2",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_62d4e61a2db2c",
+                        "operator": "==",
+                        "value": "color"
+                    },
+                    {
+                        "field": "field_62d4e61a2db32",
+                        "operator": "==",
+                        "value": "none"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 0,
+            "show_in_graphql": 1,
+            "choices": {
+                "tricentis_blue": "Tricentis Blue",
+                "warp": "Warp",
+                "accelerate": "Accelerate",
+                "blaze": "Blaze"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "default_value": "",
+            "layout": "horizontal",
+            "return_format": "value",
+            "save_other_choice": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            },
+            {
+                "param": "post_type",
+                "operator": "!=",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "show_in_graphql": 0,
+    "graphql_field_name": "support:BackgroundOptions",
+    "map_graphql_types_from_location_rules": 0,
+    "graphql_types": "",
+    "modified": 1660984276
+}

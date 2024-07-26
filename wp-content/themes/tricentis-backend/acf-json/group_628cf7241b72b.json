@@ -1,0 +1,78 @@
+{
+    "key": "group_628cf7241b72b",
+    "title": "Template: News - Media Kit",
+    "fields": [
+        {
+            "key": "field_629ed098ac030",
+            "label": "Media Kit Logo",
+            "name": "media_kit_logo",
+            "type": "image",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_629ed0bcc5241",
+            "label": "Media Kit Download Link",
+            "name": "media_kit_download_link",
+            "type": "link",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "return_format": "array"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "news"
+            },
+            {
+                "param": "post_taxonomy",
+                "operator": "==",
+                "value": "category:uncategorized"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content",
+        "excerpt"
+    ],
+    "active": false,
+    "description": "",
+    "show_in_rest": 0,
+    "show_in_graphql": 0,
+    "graphql_field_name": "template:News",
+    "map_graphql_types_from_location_rules": 0,
+    "graphql_types": "",
+    "modified": 1654774540
+}

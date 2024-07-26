@@ -1,0 +1,130 @@
+{
+    "key": "group_60a32e2534ddd",
+    "title": "Support: Background Video",
+    "fields": [
+        {
+            "key": "field_60a32e345af7b",
+            "label": "Video Sources",
+            "name": "video_sources",
+            "type": "repeater",
+            "instructions": "These are intended to have videos that support transparency. A variety of sources are needed to provide coverage across different browsers. Please refer to <a href=\"https:\/\/kitcross.net\/hevc-web-video-alpha-channel\/\" target=\"_blank\">https:\/\/kitcross.net\/hevc-web-video-alpha-channel\/<\/a> for more information. If left blank, the fallback image is used.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 0,
+            "show_in_graphql": 1,
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "Add Source",
+            "sub_fields": [
+                {
+                    "key": "field_60a32e7a5af7c",
+                    "label": "Source",
+                    "name": "source",
+                    "type": "file",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 0,
+                    "show_in_graphql": 1,
+                    "return_format": "array",
+                    "library": "all",
+                    "min_size": "",
+                    "max_size": "",
+                    "mime_types": ""
+                }
+            ]
+        },
+        {
+            "key": "field_60a32e8f5af7d",
+            "label": "Use Opacity?",
+            "name": "use_opacity",
+            "type": "true_false",
+            "instructions": "Adds an overlay over the video to help text stand out better.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 0,
+            "show_in_graphql": 1,
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_60a32ea55af7e",
+            "label": "Opacity",
+            "name": "opacity",
+            "type": "number",
+            "instructions": "Select the amount of opacity to cover video with. 0 displays the video as it appears, 100 would completely block the video from display.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_60a32e8f5af7d",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 0,
+            "show_in_graphql": 1,
+            "default_value": 30,
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": 0,
+            "max": 100,
+            "step": 1
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            },
+            {
+                "param": "post_type",
+                "operator": "!=",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "show_in_graphql": 0,
+    "graphql_field_name": "support:BackgroundVideo",
+    "map_graphql_types_from_location_rules": 0,
+    "graphql_types": "",
+    "modified": 1660984595
+}

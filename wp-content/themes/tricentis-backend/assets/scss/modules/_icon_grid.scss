@@ -1,0 +1,33 @@
+.module--icon_grid{
+	opacity: 0;
+
+	.title{
+	}
+
+	.wysiwyg{
+	}
+
+	.prehead + .title{
+	}
+
+	.title + .wysiwyg{
+	}
+
+	.cards{
+	}
+	
+	.card{
+		&__content{}
+		&__footer{}
+
+		&__icon{}
+		&__title{}
+		&__wysiwyg{}
+	}
+}
+
+.no-js{
+	.module--icon_grid{
+		@include fallbackAnimation(fadeInAnimation);;
+	}
+}

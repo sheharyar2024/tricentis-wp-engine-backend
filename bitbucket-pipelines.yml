@@ -1,0 +1,23 @@
+image: narwhalit/pantheon-deployment-2.0
+clone:
+  depth: 10 # We only need the last few commits to limit build minutes
+pipelines:
+  branches:
+    master:
+      - step:
+          script:
+            - git config --global user.email "it@narwhal.digital" && git config --global user.name "Narwhal.Digital"
+            - terminus auth:login --machine-token=$MACHINE_TOKEN
+            - npm run setup:deploy
+            - echo $(cd /tmp/build && git fetch && git checkout master && git pull)
+            - npm run deploy
+            - npm run pantheon:clear
+    develop:
+      - step:
+          script:
+            - git config --global user.email "it@narwhal.digital" && git config --global user.name "Narwhal.Digital"
+            - terminus auth:login --machine-token=$MACHINE_TOKEN
+            - npm run setup:deploy
+            - echo $(cd /tmp/build && git fetch && git checkout develop && git pull)
+            - npm run deploy
+            - npm run pantheon:cleardevelop

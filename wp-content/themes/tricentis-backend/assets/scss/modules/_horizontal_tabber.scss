@@ -1,0 +1,124 @@
+.module--horizontal_tabber{
+	opacity: 0;
+
+	.content{
+	}
+
+	.prehead{
+	}
+
+	.title{
+	}
+
+	.wysiwyg{
+
+	}
+
+	.prehead + .title{
+	}
+	
+	.title + .wysiwyg{
+	}
+
+	.mobile-button-container{
+		overflow-x: scroll;
+		-ms-overflow-style: none;
+	}
+
+	.tab-buttons{
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+		position: relative;
+
+		@include respond-above( 'md' ){
+			border-bottom: 3px solid rgba( $primary, .2 );
+		}
+
+		.button-underline{
+			display: none;
+
+			@include respond-above( 'md' ){
+				display: block;
+				transition: $global-transition;
+				position: absolute;
+				height: 3px;
+				width: 100px;
+				bottom: 0;
+				background: $secondary;
+				transform: translateY( 100% );
+			}
+		}
+
+		button{
+			color: $black;
+			opacity: .3;
+			font-weight: map-get( $font-weights, 'regular' );
+			font-size: rem-calc( 16 );
+			letter-spacing: 0;
+			text-align: left;
+			justify-content: flex-start;
+			padding: rem-calc( 0 30 0 0 );
+			background: none;
+			border: none;
+			flex: 0 0 auto;
+
+			&:hover,
+			&:focus{
+				opacity: .7;
+			}
+
+			&[aria-selected="true"] {
+				opacity: 1;
+				text-decoration: underline;
+				@include respond-above( 'md' ){
+					text-decoration: none;
+				}
+			}
+
+			@include respond-above( 'md' ){
+				text-align: center;
+				justify-content: center;
+				padding: 0;
+			}
+		}
+	}
+
+	.horizontal-tabs{
+		&.js-active{
+			.panel-container{
+				position: relative;
+				width: 100%;
+
+				.horizontal-tab-panel{
+					width: 100%;
+					transition: $global-transition;
+					transform: translateX( 100px );
+					opacity: 0;
+					position: absolute;
+					top: 0;
+					left: 0;
+					outline: none;
+
+					&.active{
+						position: relative;
+						transform: translateX( 0 );
+						opacity: 1;
+					}
+					&.transition--out{
+						position: relative;
+						transform: translateX( 100px );
+					}
+					&.transition--in{
+					}
+				}
+			}
+		}
+	}
+}
+
+.no-js{
+	.module--horizontal_tabber{
+		@include fallbackAnimation(fadeInAnimation);;
+	}
+}

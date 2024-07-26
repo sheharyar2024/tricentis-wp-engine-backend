@@ -1,0 +1,78 @@
+/*!
+Theme Name: Narwhal Boilerplate
+Theme URI: https://narwhal.digital/
+Author: Narwhal Digital
+Author URI: https://narwhal.digital/
+Description: Boilerplate for Narwhal wp sites
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: tricentis-backend
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+tricentis-backend is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Utilizes a css reset
+http://meyerweb.com/eric/tools/css/reset/
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Reset
+# Grid
+# Elements
+# Components
+# Modules
+# Utilities
+--------------------------------------------------------------*/
+@import "vars";
+@import "mixins/mixins-master";
+
+/*--------------------------------------------------------------
+# Reset
+--------------------------------------------------------------*/
+@import "reset";
+
+/*--------------------------------------------------------------
+# Grid
+# https://getbootstrap.com/docs/4.0/getting-started/theming/
+# Look in node_modules/bootstrap/scss/_variables.scss for available variables to control grid
+--------------------------------------------------------------*/
+@import "../../node_modules/bootstrap/scss/bootstrap-grid";
+
+/*--------------------------------------------------------------
+# Elements
+--------------------------------------------------------------*/
+@import "elements/all";
+
+/*--------------------------------------------------------------
+# Components
+--------------------------------------------------------------*/
+@import "components/all";
+
+/*--------------------------------------------------------------
+# Vendor
+--------------------------------------------------------------*/
+@import "vendor/magnific";
+@import "vendor/slick";
+@import "vendor/slick-theme";
+
+/*--------------------------------------------------------------
+# Templates
+--------------------------------------------------------------*/
+@import "templates/all";
+
+/*--------------------------------------------------------------
+# Modules
+--------------------------------------------------------------*/
+@import "modules/all";
+
+/*--------------------------------------------------------------
+# Utilities
+--------------------------------------------------------------*/
+@import "utilities/all";
+@import "../../node_modules/bootstrap/scss/utilities/display";

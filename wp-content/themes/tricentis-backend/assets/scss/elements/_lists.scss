@@ -1,0 +1,15 @@
+//this file should be used for special lists with their own separate class
+//default lists in a free text field are in components/_typography
+nav{
+	ul,ol{
+		list-style-type: none;
+	}
+
+	li{
+		margin-left: 0;
+
+		&:before{
+			content: none;
+		}
+	}
+}

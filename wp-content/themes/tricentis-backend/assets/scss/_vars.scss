@@ -1,0 +1,73 @@
+$white: #FFFFFF;
+$black: #000000;
+
+$primary: #4f89b2;
+$secondary: #4c6174;
+
+$greys: (
+
+);
+$grays: $greys;
+
+$background-colors: (
+	'white': $white,
+	'black': $black,
+	'primary': $primary,
+	'secondary': $secondary
+);
+
+$background-font-colors: (
+	'white': $primary,
+	'black': $white,
+	'primary': $white,
+	'secondary': $white
+);
+
+$icon-colors: (
+	'white': $white,
+	'black': $black,
+	'primary': $primary,
+	'secondary': $secondary
+);
+
+$button-colors: (
+	'white': $white,
+	'black': $black,
+	'primary': $primary,
+	'secondary': $secondary
+);
+
+$global-font-size: 16px;
+$font: "Open Sans", Arial, sans-serif;
+$font--heading: "Century Gothic", AppleGothic, sans-serif;
+
+$font-weights: (
+	'thin': 100,
+	'extra-light': 200,
+	'light': 300,
+	'regular': 400,
+	'medium': 500,
+	'semi-bold': 600,
+	'bold': 700,
+	'extra-bold': 800,
+	'black': 900,
+);
+
+$global-transition: all 0.3s ease-in;
+
+$container-max-widths: (
+	sm: 540px,
+	md: 720px,
+	lg: 960px,
+	xl: 1080px
+);
+
+$grid-gutter-width: 26px; //around each col (gets divided by 2)
+$mobile-outside-gutter-width: 30px; //on each side (both sides have this much)
+
+$padding-options: (
+	'none': 0,
+	'small': 25px,
+	'default': 50px,
+	'large': 100px,
+);

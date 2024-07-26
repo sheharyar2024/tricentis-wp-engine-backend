@@ -1,0 +1,18 @@
+$element__links__percentage: 10% !default;
+$element__links__color: $primary !default;
+$element__links__color__hover: lighten( $element__links__color, $element__links__percentage ) !default;
+$element__links__transition: $global-transition !default;
+
+a {
+	color: $element__links__color;
+	transition: $element__links__transition;
+	text-decoration: none;
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: $element__links__color__hover;
+		outline: 0;
+	}
+
+}
